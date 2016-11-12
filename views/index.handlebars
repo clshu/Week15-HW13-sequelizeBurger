@@ -1,0 +1,59 @@
+<div id="burgerHeader">
+  <img id="burgerImg" src="/assets/img/1955_Burger.png" alt="burger">
+  <h1>Eat Da Burger!</h1>
+</div>
+<div id="top">
+<div class="box upperbox" id="box1">
+  <!-- dummy box to fill up space -->
+</div>
+
+<div class="box upperbox" id="box2">
+    
+  {{#each burgers}}
+    {{#unless this.devoured}}     
+      <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+      <p style="display: inline-block;">
+        {{this.id}}.
+        {{this.burger_name}}
+      </p>
+          <input type="hidden" name="devoured" value="true">
+          <button class="devoureIt" style="display: inline-block;">Devoure It</button>
+      </form> 
+     
+    {{/unless}}
+  {{/each}}
+</div>
+
+<div class="box upperbox" id="box3">
+  <!-- dummy box to fill up space -->
+</div>
+<div class="box upperbox" id="box4">
+
+  {{#each burgers}}
+    {{#if this.devoured}}
+     
+      {{this.id}}.
+      {{this.burger_name}}
+  
+      <hr>
+  
+    {{/if}}
+  {{/each}}
+
+  
+</div>
+<div class="box upperbox" id="box5">
+  <!-- dummy box to fill up space -->
+</div>
+<div class="box lowerbox" id="box6">
+  <!-- dummy box to fill up space -->
+</div>
+
+<div class="box lowerbox" id="box7">
+<h3>Add a Burger</h3>
+<form class="create-update-form" action="burgers/create" method="POST"> 
+  <label for="burger">Burger Name:</label>
+  <input type="text" id="burger" name="burger_name" style="display: inline-block;">
+  <button id="submitBuger" type="submit" style="display: inline-block;">Submit</button>
+</form>  
+</div>

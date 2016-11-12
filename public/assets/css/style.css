@@ -1,0 +1,66 @@
+body {
+	background-color: orange;
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+#burgerHeader {
+	text-align: center;
+	font-style: italic;
+	font-weight: bolder;	
+}
+#burgerImg {
+	height: 60px;
+	width: 5%;
+	margin: auto;
+}
+
+button {
+	color: white;
+	border: 1px;
+	border-radius: 3px;	
+}
+
+.devoureIt {
+	background-color: blue;
+}
+
+#submitBuger {
+	background-color: green;
+}
+/*
+ Use boxes to mimic a grid system
+ fill up space with empty boxes at where requires empty grid 
+*/ 
+.box {
+	border: 1px solid orange;
+	border-radius: 5px;
+
+	float: left;
+	
+}
+
+#box2, #box4 {
+	width: 40%;
+}
+
+#box1, #box3, #box5 {
+	width: 5%;
+}
+
+.lowerBox {
+	height: 150px;
+}
+
+#box6, #box7 {
+	width: 33%;
+	height: 100px;
+}
+
+#box6 {
+	clear: left;
+}
+
+#box2, #box4, #box7 {
+	background-color: white;
+}
