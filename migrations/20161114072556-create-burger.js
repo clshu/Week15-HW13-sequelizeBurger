@@ -17,9 +17,10 @@ module.exports = {
         type: Sequelize.BOOLEAN,
         defaultValue: false
       },
+      // Sequelize doesn't have TIMESTAMP, so do some tweaking
       date: {
-        allowNull: false,
-        type: Sequelize.TIMESTAMP,
+        type: 'TIMESTAMP',
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         allowNull: false
       },
       createdAt: {

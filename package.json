@@ -1,21 +1,21 @@
 {
-  "name": "burger",
+  "name": "sequelizeBurger",
   "version": "1.0.0",
-  "description": "A Node.js  app involves express, handlebars, method-override, body-parser",
+  "description": "A Node.js  app involves sequelize, express, handlebars, method-override, body-parser",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clshu/Week14-HW12-Burger.git"
+    "url": "git+https://github.com/clshu/Week15-HW13-sequelizeBurger.git"
   },
   "author": "Chin-Long Shu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clshu/Week14-HW12-Burger/issues"
+    "url": "https://github.com/clshu/Week15-HW13-sequelizeBurger/issues"
   },
-  "homepage": "https://github.com/clshu/Week14-HW12-Burger#readme",
+  "homepage": "https://github.com/clshu/Week15-HW13-sequelizeBurger#readme",
   "dependencies": {
     "body-parser": "1.15.2",
     "express": "4.14.0",
