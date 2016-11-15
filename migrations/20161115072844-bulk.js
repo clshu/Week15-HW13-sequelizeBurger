@@ -30,7 +30,7 @@ module.exports = {
       return queryInterface.dropTable('users');
     */
     
-    
+    // TRUNCATE Burgers to reset id number to the beginning number
       return models.Burger.destroy({truncate: true}, {where:{burger_name: [
          "Double Cheese Burger",
          "Italian BMT Burger",
